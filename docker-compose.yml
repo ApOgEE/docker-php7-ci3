@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    ci3app:
+        image: apogeek/php:7.3-ci3
+        volumes:
+            - ./appsrc:/var/www/html
+        ports:
+            - 80:80
+
